@@ -85,6 +85,6 @@ with an error naming the offending line number.
 ## Status
 
 Early skeleton: single-line parsing, validation, and the boxed printer
-work. The multi-line grid format (nine rows of text per puzzle,
-matching the printer's own output) isn't read back in yet - see the
-roadmap.
+work. `GridParser` reads the boxed multi-line format back in, so
+`Fprint`'s output round-trips through `GridParser.Next`. There's no
+solver yet.
